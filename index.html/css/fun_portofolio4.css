@@ -1,0 +1,451 @@
+.drawing {
+	width: 85%;
+	margin: auto;
+	margin-top: 150px;
+}
+
+.drawing .title h1 {
+	text-align: center;
+	font-family: Roboto;
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	padding-bottom: 0;
+	border-bottom: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+.drawing .title p {
+	text-align: center;
+	font-size: 17px;
+	font-family: Arial;
+	font-weight: 400;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.drawing .title h3{
+	font-size: 22px;
+	text-align: center;
+	font-family: Roboto;
+	margin-top: 40px;
+	letter-spacing: 2px;
+}
+
+@media(max-width: 768px) {
+	.drawing {
+	width: 95%;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.drawing .title h3 {
+	font-size: 16px;
+	text-align: center;
+	font-family: Roboto;
+	margin-top: 30px;
+	letter-spacing: 0;
+}
+
+.drawing .title h1 {
+	text-align: center;
+	font-family: Roboto;
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	padding-bottom: 0;
+	border-bottom: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+.drawing .title p {
+	text-align: center;
+	font-size: 10px;
+	font-family: Arial;
+	font-weight: 400;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+}
+
+/* art1 */
+.drawing .art1 {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.drawing .art1 .heading h1 {
+	font-size: 50px;
+	height: 100px;
+	text-transform: uppercase;
+	font-family: 'Noto Sans JP', sans-serif;
+	position: relative;
+	left: 200px;
+}
+
+
+.drawing .art1 .box1 {
+	width: 40%;
+	height: 80%;
+	background-color: grey;
+	background-image: url('../images/rdj3.jpg');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	right: 150px;
+}
+
+@media(max-width: 768px) {
+	.drawing .art1 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 85vh;
+	justify-content: center;
+	align-items: center;
+	margin-top: -20px;
+}
+
+.drawing .art1 .heading h1{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 20px;
+	letter-spacing: 3px;
+	position: relative;
+	top: 50px;
+	left: 0px;
+}
+
+.drawing .art1 .box1 {
+	width: 100%;
+	height: 110%;
+	background-color: grey;
+	position: relative;
+	right: 0px;
+}
+}
+
+/* art2 */
+.drawing .art2 {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.drawing .art2 .heading {
+	order: 2;
+}
+
+.drawing .art2 .heading h1{
+	font-size: 50px;
+	height: 100px;
+	order: 2;
+	text-transform: uppercase;
+	font-family: 'Noto Sans JP', sans-serif;
+	position: relative;
+	right: 150px;
+}
+
+.drawing .art2 .box1 {
+	width: 50%;
+	height: 85%;
+	background-color: grey;
+	order: 1;
+	background-image: url(../images/cap.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+@media(max-width: 768px) {
+	.drawing .art2 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 85vh;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin-top: 40px;
+
+}
+
+.drawing .art2 .heading h1 {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 20px;
+	letter-spacing: 3px;
+	position: relative;
+	top: 15px;
+	right: 0;
+}
+
+
+.drawing .art2 .box1 {
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+	order: 2;
+	position: relative;
+	bottom: 35px;
+}
+}
+
+/* art3 */
+
+.drawing .art3 {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin-top: 80px;
+}
+
+.drawing .art3 .heading {
+	width: 40%;
+}
+
+.drawing .art3 .heading h1 {
+	font-size: 50px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight:;
+	position: relative;
+	left: 50px;
+	bottom: 30px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	position: relative;
+	left: 50px;
+}
+
+.drawing .art3 .box1 {
+	width: 40%;
+	height: 90%;
+	background-image: url('../images/cc.jpg');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	right: 150px;
+}
+
+@media(max-width: 768px) {
+	.drawing .art3 {
+	display: flex;
+	width: 100%;
+	height: 85vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin-top: 40px;
+}
+
+.drawing .art3 .heading {
+	width: 100%;
+	text-align: center;
+}
+
+.drawing .art3 .heading h1 {
+	font-size: 30px;
+	font-family: 'Noto Sans JP', sans-serif;
+	position: relative;
+	left: 0px;
+	bottom: 5px;
+}
+
+.drawing .art3 .box1 {
+	width: 100%;
+	height: 90%;
+	background-color: grey;
+	right: 0;
+}
+}
+
+/* art4 */
+
+.drawing .art4 {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin-top: 80px;
+}
+
+.drawing .art4 .heading {
+	width: 40%;
+	order: 2;
+}
+
+.drawing .art4 .heading h1 {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 50px;
+	text-transform: uppercase;
+	position: relative;
+	bottom: 30px;
+	left: 60px;
+	letter-spacing: 3px;
+}
+
+
+.drawing .art4 .box1 {
+	width: 60%;
+	height: 85%;
+	background-image: url('../images/random.jpg');
+	background-size: cover;
+	background-position: center;
+	order: 1;
+}
+
+@media(max-width: 768px) {
+	.drawing .art4 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 85vh;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin-top: 70px;
+}
+
+.drawing .art4 .heading {
+	width: 100%;
+	order: 1;
+	text-align: center;
+}
+
+.drawing .art4 .heading h1 {
+	
+	font-size: 30px;
+	text-transform: uppercase;
+	position: relative;
+	bottom: 5px;
+	left: 0px;
+}
+
+
+.drawing .art4 .box1 {
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+	order: 2;
+}
+}
+
+/* character */
+
+.drawing .character {
+	margin-top: 100px;
+}
+
+.drawing .character h1 {
+	text-align: center;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 50px;
+	text-transform: uppercase;
+	margin-top: 80px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.drawing .character p {
+	text-align: center;
+	font-size: 20px;
+	font-family: Roboto;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+	margin: auto;
+	margin-bottom: 20px;
+	width: 90%;
+}
+
+.drawing .character .boxes {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 80vh;
+}
+
+.drawing i {
+	font-size: 30px;	
+}
+
+.drawing .character .box1 {
+	height: 100%;
+	width: 48%;
+	background-color: grey;
+}
+
+.drawing .character .box2 {
+	height: 100%;
+	width: 48%;
+	background-color: grey;
+}
+
+@media(max-width: 768px) {
+.drawing .character p {
+	text-align: center;
+	font-size: 15px;
+	font-family: Roboto;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+	margin: auto;
+
+	width: 90%;
+}
+
+.drawing i {
+	font-size: 20px;	
+}
+
+.drawing .character {
+	margin-top: 0px;
+}
+
+.drawing .character h1 {
+	text-align: center;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-top: 70px;
+	letter-spacing: 0px;
+}
+
+.drawing .character .boxes {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 80vh;
+}
+
+.drawing .character .box1 {
+	height: 48%;
+	width: 100%;
+	background-color: grey;
+}
+
+.drawing .character .box2 {
+	height: 48%;
+	width: 100%;
+	background-color: grey;
+}
+}

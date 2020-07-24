@@ -1,0 +1,557 @@
+/* showcase */
+.showcase {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	margin-top: 100px;
+}
+
+.showcase .box1 {
+	width: 50%;
+	height: 50%;
+	position: relative;
+	left: 50px;
+}
+
+.showcase .box1 h4 {
+	font-family: 'Roboto';
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	margin-bottom: 20px;
+	color: rgba(0,0,0,0.6);
+}
+
+.showcase .box1 h2 {
+	font-family: 'Strait', sans-serif;
+	font-size: 70px;
+	font-weight: 1000;
+	line-height: 1.1;
+	margin-bottom: 30px;
+}
+
+.showcase .box1 p {
+	font-family: Roboto;
+	font-size: 23px;
+	line-height: 1.6;
+	letter-spacing: 2px;
+	color: rgba(0,0,0,0.7);
+	margin-bottom: 30px;
+}
+
+
+.showcase .box1 .nav p {
+	font-size: 18px;
+	font-family: Roboto;
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+.showcase .box1 .nav p span {
+	padding: 0 20px;
+}
+
+.showcase .box1 .nav p a {
+	text-decoration: none;
+	color: black;
+	font-family: Arial;
+}
+
+.showcase .box1 .nav p a:nth-child(2) {
+	padding-left: 25px;
+}
+
+.showcase .box2 {
+	width: 40%;
+	height: 80%;
+	background-image: url('../images/mee2.png');
+	background-position: center;
+	background-size: cover;
+}
+
+@media(max-width: 768px) {
+	.showcase {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	width: 90%;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.showcase .box1 {
+	width: 100%;
+	height: 50%;
+	position: relative;
+	left: 0;
+	order: 2;
+	
+}
+
+.showcase .box1 h4 {
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	margin-bottom: 10px;
+	color: rgba(0,0,0,0.6);
+	text-align: center;
+	margin-top: 10px;
+}
+
+.showcase .box1 h2 {
+	font-family: 'Strait', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.showcase .box1 p {
+	font-family: Roboto;
+	font-size: 17px;
+	line-height: 1.6;
+	letter-spacing: 2px;
+	color: rgba(0,0,0,0.7);
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.showcase .box1 .nav p {
+	font-size: 16px;
+	font-family: Roboto;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.showcase .box1 .nav p span {
+	padding: 0 20px;
+}
+
+.showcase .box1 .nav p a {
+	text-decoration: none;
+	color: black;
+	font-family: Arial;
+}
+
+.showcase .box2 {
+	order: 1;
+	width: 70%;
+	height: 50%;
+	margin: auto;
+}
+	
+
+}
+
+.blender {
+	width: 90%;
+	margin: auto;
+	margin-top: 0px;
+}
+
+
+/*title*/
+.blender .title1 h1 {
+	font-family: arial;
+	font-size: 50px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	outline: 0;
+	position: relative;
+	top: 10px;
+}
+
+.blender .title1 img {
+	width: 40px;
+}
+
+.blender .title1 h3 {
+	font-size: 17px;
+	font-family: arial;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 0;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+
+
+/*boxes*/
+.blender .boxes {
+	display: grid;
+	width: 100%;
+	grid-template-areas: "main side"
+						 "main sideone";
+	grid-template-rows: 300px 300px;
+	grid-template-columns: 2fr minmax(150px, 300px);
+	grid-gap: 10px;
+}
+
+.blender .box1 {
+	grid-area: main;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	border-radius: 10px;
+}
+
+.blender .box1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.blender .box1 .img {
+	background-image: url('../images/applecontrast2.png');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	transition: 0.5s; 
+}
+
+.blender .box1 .text {
+	position: absolute;
+	top: 0;
+	font-family: 'Roboto';
+	font-size: 25px;
+	color: black;
+	font-weight: 400;
+	transition: 0.5s;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+	padding: 10px;
+	word-spacing: 3px;
+}
+
+.blender .box1 .text i {
+	transition: 0.3s;
+}
+
+.blender .box1:hover .text:hover i {
+	margin-left: 25px;
+}
+
+.blender .box1:hover .img {
+	transform: scale(1.2);
+}
+
+.blender .box1:hover .text {
+	letter-spacing: 4px;
+}
+
+.blender .box1:hover .text i {
+	margin-left: 5px;
+}
+
+.blender .box2 {
+	grid-area: side;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.blender .box2 .img {
+	background-image: url('../images/donut1.png');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	transition: 0.5s;
+}
+
+.blender .box2:hover .img {
+	transform: scale(1.2);
+}
+
+.blender .box3 {
+	grid-area: sideone;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.blender .box3 .img {
+	background-image: url('../images/icecream5.png');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	transition: 0.5s;
+}
+
+.blender .box3:hover .img {
+	transform: scale(1.2);
+}
+
+/*media query*/
+@media(max-width: 900px) {
+	.blender .boxes {
+	display: grid;
+	width: 100%;
+	grid-template-areas: "main main"
+						 "side sideone";
+	grid-template-rows: 400px minmax(100px, 225px);
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.blender .box1 .text {
+	position: absolute;
+	top: 0;
+	font-family: 'Roboto';
+	font-size: 18px;
+	color: black;
+	font-weight: 400;
+	transition: 0.5s;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	word-spacing: 3px;
+}
+
+.blender .title1 {
+	text-align: center;
+}
+
+.blender .title1 h1 {
+	font-family: arial;
+	font-size: 40px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	outline: 0;
+	position: relative;
+	top: 10px;
+}
+
+.blender .title1 img {
+	width: 40px;
+}
+
+.blender .title1 h3 {
+	font-size: 14px;
+	font-family: arial;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 0;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+}
+
+}
+
+
+
+.art {
+	width: 90%;
+	margin: auto;
+	margin-top: 70px;
+}
+
+
+/*title*/
+.art .title1 h1 {
+	font-family: arial;
+	font-size: 50px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	outline: 0;
+	position: relative;
+	top: 10px;
+}
+
+.art .title1 img {
+	width: 45px;
+	position: relative;
+	top: 7px;
+}
+
+.art .title1 h3 {
+	font-size: 17px;
+	font-family: arial;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 5px;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+
+
+/*boxes*/
+.art .boxes {
+	display: grid;
+	width: 100%;
+	grid-template-areas: "main side sideone"
+						 ;
+	grid-template-rows: 500px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.art .box1 {
+	grid-area: main;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	border-radius: 10px;
+}
+
+.art .box1 .img {
+	background-image: url('../images/rdj3.jpg');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	transition: 0.5s;
+}
+
+.art .box1 .text {
+	position: absolute;
+	top: 0;
+	font-family: 'Roboto';
+	font-size: 25px;
+	color: black;
+	font-weight: 400;
+	transition: 0.5s;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: 10px;
+}
+
+.art .box1 .text i {
+	transition: 0.3s;
+}
+
+.art .box1:hover .text:hover i {
+	margin-left: 25px;
+}
+
+.art .box1:hover .img {
+	transform: scale(1.2);
+}
+
+.art .box1:hover .text {
+	letter-spacing: 4px;
+}
+
+.art .box1:hover .text i {
+	margin-left: 5px;
+}
+
+.art .box2 {
+	grid-area: side;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.art .box2 .img {
+	background-image: url('../images/cap.jpg');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	transition: 0.5s;
+}
+
+.art .box2:hover .img {
+	transform: scale(1.2);
+}
+
+.art .box3 {
+	grid-area: sideone;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.art .box3 .img {
+	background-image: url('../images/cc.jpg');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	transition: 0.5s;
+}
+
+.art .box3:hover .img {
+	transform: scale(1.2);
+}
+
+/*media query*/
+@media(max-width: 900px) {
+	.art {
+		margin-top: 100px;
+	}
+	.art .boxes {
+	display: grid;
+	width: 100%;
+	grid-template-areas: "main main"
+						 "side sideone";
+	grid-template-rows: 500px minmax(100px, 225px);
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+}
+
+
+
+.art .box1 .text {
+	position: absolute;
+	top: 0;
+	font-family: 'Roboto';
+	font-size: 18px;
+	color: black;
+	font-weight: 400;
+	transition: 0.5s;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	word-spacing: 3px;
+}
+
+.art .title1 {
+	text-align: center;
+}
+
+.art .title1 h1 {
+	font-family: arial;
+	font-size: 40px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	outline: 0;
+	position: relative;
+	top: 10px;
+}
+
+.art .title1 img {
+	width: 40px;
+	position: relative;
+	top: 5px;
+}
+
+.art .title1 h3 {
+	font-size: 14px;
+	font-family: arial;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 5px;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+}
+
+}
